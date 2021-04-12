@@ -11,7 +11,7 @@ Future<List<Vet>> fetchVet() async {
 
 
   final response = await http.get(
-    Uri.http('192.168.0.117:19000', 'API/vetsJSON'),
+    Uri.http('192.168.0.117:19000', 'API/vetsJSON'), // Utilizar ip de la maquina
     headers: {HttpHeaders.authorizationHeader: jwt },
   );
 
